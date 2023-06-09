@@ -93,12 +93,6 @@ def set_driver(search_job_title:str, search_location:str):
     options.add_argument("--disable-extensions")
     options.add_argument("--window-size=1920,1080")
     options.add_argument('--headless')  # Run in headless mode
-
-
-    # options.add_argument('--no-sandbox')  # Bypass OS security model
-    # options.add_argument('--disable-gpu')
-    # options.add_argument('--disable-dev-shm-usage') 
-    # options.add_argument("--disable-javascript")
     options.add_argument(f"user-agent={get_user_agent()}")
     
     chromedriver_path = "chromedriver.exe"
