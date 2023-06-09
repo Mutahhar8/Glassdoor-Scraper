@@ -139,19 +139,7 @@ def set_driver(search_job_title:str, search_location:str):
     links_list=list()
     is_remote=list()
     job_type=list()
-    # df = pd.DataFrame(columns=[
-    #     "company_name",
-    #     "titles",
-    #     "locations",
-    #     "salary",
-    #     "date",
-    #     "description",
-    #     "link",
-    #     "platform",
-    #     "job_type",
-    #     "is_remote",
-    #     "country"
-    # ])
+
     count = 0
     while True:
         descrption_list.clear()
@@ -248,7 +236,6 @@ def set_driver(search_job_title:str, search_location:str):
         dates = get_date(dates)
 
         nan_count = pd.isna(salaries1).sum()
-        # nan_count = np.isnan(salaries1).sum()
         threshold = 5  # Set your desired threshold here
     
         if nan_count > threshold:
